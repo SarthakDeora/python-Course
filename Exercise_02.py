@@ -12,11 +12,11 @@ elif number1 == 56 and number2 == 9 and operator == "+":
 elif number1 == 56 and number2 == 6 and operator == "/":
     print(4)
 else:
-    if operator == "*":
+    if operator == "*" or operator == "multiply":
         print(number1*number2)
-    elif operator == "+":
+    elif operator == "+" or operator == "plus":
         print(number2+number1)
-    elif operator == "/":
+    elif operator == "/" or operator == "divide":
         print(number1+number2)
-    elif operator == "-":
+    elif operator == "-" or operator == "minus":
         print(number1-number2)
