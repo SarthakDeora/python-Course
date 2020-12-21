@@ -20,3 +20,4 @@ else:
         print(number1+number2)
     elif operator == "-" or operator == "minus":
         print(number1-number2)
+        # And done
