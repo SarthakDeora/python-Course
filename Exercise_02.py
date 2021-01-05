@@ -17,7 +17,7 @@ else:
     elif operator == "+" or operator == "plus":
         print(number2+number1)
     elif operator == "/" or operator == "divide":
-        print(number1+number2)
+        print(number1/number2)
     elif operator == "-" or operator == "minus":
         print(number1-number2)
         # And done
