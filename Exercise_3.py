@@ -18,5 +18,5 @@ while True:
         print("Congrats u guessed the number!!")
         break
     elif inp_num == 1000:
-        print("U chose to surrender but the nmber u tried to guess is", rand_num)
+        print("U chose to surrender but the number u tried to guess is", rand_num)
         break
