@@ -21,7 +21,7 @@ print(function1(2, 6))
 # Now if we will print functions It will print "None" in the terminal at the end of the functions so to prevent that we can simply do this
 
 
-def function2(a, b, ):
+def function2(a, b ):
     print("Hi guys my name is Sarthak Deora")
     average = (a+b)/2
     sum1 = a+b

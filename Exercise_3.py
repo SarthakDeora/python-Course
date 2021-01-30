@@ -1,22 +1,30 @@
 # Guess the numebr
 
-import random
+# We have to make a number guessing game in which i have to tell number off guesses it too and number of guesses remaining and i not guessed in 9 time print game over
+def popu():
+    import random
+    guessing_number = random.randint(0, 100)
+    i = 0
+    print("-------------Hello You have to guess the number in 9 times if not guessed in 9 turns then game over!------------")
+    while True:
+        guessed_number = int(input("Enter your guess: \n"))
+        i += 1
+        if i != 9:
+            if guessed_number == guessing_number:
+                print("Congratulations You guessed the number in ", i, " turns")
+                break
+            elif guessing_number > guessed_number:
+                print("Try a bigger number!")
+                print(9-i, "Turns left")
+                continue
+            elif guessed_number > guessing_number:
+                print("Try a smaller number!")
+                print(9-i, "Turn left")
+                continue
+        else:
+            print("Game over!, The number was", guessing_number)
+            break
 
-rand_num = random.randint(0, 200)
-print("If u wanna surrender just type 1000")
-inp_num = int(input("Enter your guess: "))
-while True:
 
-    if (inp_num > rand_num and inp_num != 1000):
-        print("Try a smaller number please")
-        inp_num = int(input())
-
-    elif inp_num < rand_num:
-        print("Try a greater number pls: ")
-        inp_num = int(input())
-    elif inp_num == rand_num:
-        print("Congrats u guessed the number!!")
-        break
-    elif inp_num == 1000:
-        print("U chose to surrender but the number u tried to guess is", rand_num)
-        break
+if __name__ == '__main__':
+    popu()
